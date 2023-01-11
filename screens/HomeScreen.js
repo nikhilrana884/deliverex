@@ -1,6 +1,7 @@
 import { useNavigation } from '@react-navigation/native'
 import React, { useEffect, useLayoutEffect } from 'react'
 import { View, Text, SafeAreaView, Image } from 'react-native'
+import { ChevronLeftIcon, UserIcon } from 'react-native-heroicons/solid'
 
 function HomeScreen() {
   const navigation = useNavigation();
@@ -24,11 +25,12 @@ function HomeScreen() {
           />
         </View>
         <View>
-          <Text>
+          <Text className="font-semibold text-blue-400 text-s">
             Deliver Now 
           </Text>
-          <Text>
+          <Text className="font-semibold text-black-400 text-xl">
             Current Location
+            <ChevronLeftIcon size={20} color="75AA50"/>
           </Text>
         </View>
       </Text>
