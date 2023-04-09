@@ -15,24 +15,25 @@ function HomeScreen() {
 
   return (
     <SafeAreaView>
-      <Text>
-        <View>
+      <Text className >
+        <View className="flex-row pb-4 items-center mx-4 space-x-1">
           <Image 
           source = {{
-            uri: 'link ',
+            uri: "https://www.pexels.com/photo/abandoned-ancient-antique-architecture-235986/",
           }}
-          className = "h-6 w-6 bg-white-200 p-3"
+          className = "h-6 w-6 bg-white-200 p-1"
           />
         </View>
-        <View>
-          <Text className="font-semibold text-blue-400 text-s">
+        <View className >
+          <Text className="font-semibold text-blue-400 text-l">
             Deliver Now 
           </Text>
-          <Text className="font-semibold text-black-400 text-xl">
+          <Text className="font-semibold text-blue-400 text-xl">
             Current Location
             <ChevronLeftIcon size={20} color="75AA50"/>
           </Text>
         </View>
+        <UserIcon size={20} color="75AA50"/>
       </Text>
     </SafeAreaView>
   )
